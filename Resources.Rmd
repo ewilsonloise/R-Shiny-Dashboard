@@ -1,0 +1,16 @@
+---
+title: "Resources"
+output: html_document
+date: "2024-04-19"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#Widget gallery 
+
+#[https://shiny.posit.co/r/gallery/widgets/widget-gallery/]
+```
+
