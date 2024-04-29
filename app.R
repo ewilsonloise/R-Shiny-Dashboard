@@ -4,7 +4,7 @@ library(shinythemes)
 
 bcc <- read.csv("bcc_occupation_industry - bcc_occupation_industry.csv")
 ui <- fluidPage(
-  titlePanel("I am adding a title!"),
+  titlePanel("Hello!!"),
   sidebarLayout(
     sidebarPanel("put my widgets here",
                  selectInput(inputId = "suburb_select", 
