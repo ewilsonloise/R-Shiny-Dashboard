@@ -2,7 +2,7 @@ library(tidyverse)
 library(shiny)
 library(shinythemes)
 
-bcc <- read.csv("Data/Raw/bcc_occupation_industry - bcc_occupation_industry.csv")
+bcc <- read.csv("bcc_occupation_industry - bcc_occupation_industry.csv")
 ui <- fluidPage(
   titlePanel("I am adding a title!"),
   sidebarLayout(
