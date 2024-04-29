@@ -15,7 +15,8 @@ ui <- fluidPage(
                               label = "Choose region:",
                               choices = unique(bcc$region)) 
     ),
-    mainPanel("put my outputs here",
+    mainPanel("Brisbane Suburbs",
+
               p("Suburb's top industries:"),
               tableOutput(outputId = "industry_table"),
               p("Region’s top occupations:"),
