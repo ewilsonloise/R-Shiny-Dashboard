@@ -6,7 +6,7 @@ bcc <- read.csv("bcc_occupation_industry - bcc_occupation_industry.csv")
 ui <- fluidPage(
   titlePanel("I am adding a title!"),
   sidebarLayout(
-    sidebarPanel("put my widgets here",
+    sidebarPanel("Here are my widgets",
                  selectInput(inputId = "suburb_select", 
                              label = "Choose a suburb:", 
                              choices = unique(bcc$suburb)
