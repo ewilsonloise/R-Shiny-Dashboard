@@ -5,9 +5,9 @@ library(shinythemes)
 
 bcc <- read.csv("bcc_occupation_industry - bcc_occupation_industry.csv")
 ui <- fluidPage(
-  titlePanel("Hello!!"),
+  titlePanel("I am adding a title!"),
   sidebarLayout(
-    sidebarPanel("put my widgets here",
+    sidebarPanel("Here are my widgets",
                  selectInput(inputId = "suburb_select", 
                              label = "Choose a suburb:", 
                              choices = unique(bcc$suburb)
@@ -16,7 +16,8 @@ ui <- fluidPage(
                               label = "Choose region:",
                               choices = unique(bcc$region)) 
     ),
-    mainPanel("put my outputs here",
+    mainPanel("Brisbane Suburbs",
+
               p("Suburb's top industries:"),
               tableOutput(outputId = "industry_table"),
               p("Region’s top occupations:"),
@@ -51,4 +52,3 @@ server <- function(input, output) {
   
 }
 shinyApp(ui = ui, server = server)
-
